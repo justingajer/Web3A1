@@ -1,0 +1,103 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(1fr 4fr);
+    grid-gap: 10px;
+    padding: 10px;
+    height: 100%;
+    }
+    
+  .header {
+      grid-column: span 10;
+      grid-row: span 5;
+      background-color: #1a1a2e;
+      display: inline-flex;
+    }
+  
+    .header > div {
+      margin: 6px;
+      gap: 1690px;
+    }
+    
+    .favourites{
+      grid-column: span 3;
+      grid-row: span 60;
+      background-color: #1a1a2e;
+      min-height: 100%;
+    }
+  
+    .favourites button{
+      height: 20px;
+    }
+  
+    .playfilter {
+      grid-column: span 3;
+      grid-row: span 60;
+      background-color: #1a1a2e;
+    
+    }
+  
+    .playlist {
+      grid-column: span 4;
+      grid-row: span 60;
+      background-color: #1a1a2e;
+      text-decoration: none; 
+      display: flex;
+      justify-content: center;
+      overflow-y: scroll;
+    }
+  
+    .playlist span{
+      height: 100px;
+    }
+    
+    body {
+      background-color: #133b6b;
+      color: white;
+  }
+  
+  ::placeholder {
+      color: white;
+  }
+  
+  li{
+      padding: 10px;
+  }
+  
+  li .button{
+      background-color: #fafafa;
+  }
+  
+  .about{
+    color: black;
+  }
+  
+  /*---- BUTTON CSS CREDIT TO CSSWAND CSSWAND.DEV -------*/
+  
+  button {
+      color: #E2E2E2;
+      background-color: #292D3E;
+      border: 1px solid #E2E2E2;
+      border-radius: 4px;
+      padding: 15px;
+         padding-bottom: 30px;
+      cursor: pointer;
+      height: 32px;
+      font-size: 14px;
+      box-shadow: 0 0 4px #999;
+      outline: none;
+      background-position: center;
+      transition: background 0.3s;
+    }
+    
+    button:hover{
+      background: #E2E2E2 radial-gradient(circle, transparent 1%, #47a7f5 1%)
+       center/15000%;
+      color: #292D3E;
+    }
+    
+    button:active{
+      background-color: #292d3e;
+      background-size: 100%;
+      transition: background 0s;
+    }
